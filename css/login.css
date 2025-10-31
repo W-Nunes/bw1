@@ -1,0 +1,77 @@
+body{
+	background: #000
+	}
+
+.card{
+	border: none;
+	height: 100%;
+	}
+
+.forms-inputs{
+	position: relative
+	}
+
+
+.forms-inputs span{
+
+	background-color: #fff;
+
+	font-size: 15px
+	}
+
+.forms-inputs input{
+	height: 50px;
+	border: 2px solid #eee
+	}
+
+.forms-inputs input:focus{
+	box-shadow: none;
+	outline: none;
+	border: 2px solid #000
+	}
+
+.btn{
+	height: 50px
+	}
+
+.success-data{
+	display: flex;
+	flex-direction: column
+	}
+
+.bxs-badge-check{
+	font-size: 90px;
+}
+
+
+.logo{
+	text-align:center;
+	margin-top: -30px;
+	margin-bottom: 10px;
+	padding: 2rem 0rem;
+
+}
+
+.logo img {
+    width: 80%;
+}
+
+
+.link-rec{
+	text-decoration: none;
+	font-size: 14px;
+
+}
+
+
+.link-rec:hover{
+	text-decoration: underline;
+	
+}
+
+
+@media screen and (min-width: 768px)  {
+    .col-md-4 {
+        width: 40%;
+    }
+}

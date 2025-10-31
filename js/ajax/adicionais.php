@@ -1,0 +1,18 @@
+<?php 
+@session_start();
+require_once('../../sistema/conexao.php');
+
+$id = $_POST['id'];
+$acao = $_POST['acao'];
+$sessao = @$_SESSION['sessao_usuario'];
+$cat = @$_POST['cat'];
+
+if($acao != 'Não'){
+  $pdo->query("INSERT INTO temp SET sessao = '$sessao', tabela = 'adicionais', id_item = '$id', carrinho = '0', data = curDate(), categoria = '$cat'"); 
+}else{
+    $pdo->query("DELETE FROM temp WHERE id_item = '$id' and sessao = '$sessao' and tabela = 'adicionais' and carrinho = '0'"); 
+}
+
+echo 'Alterado com Sucesso';
+
+ ?>
