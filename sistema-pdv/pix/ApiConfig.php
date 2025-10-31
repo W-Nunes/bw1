@@ -1,3 +1,0 @@
-<?php 
-$access_token = 'APP_USR-1234361541344543-012221-3dbca2ce354b9c1cac309c8988ce51c1-2196354115';
- ?>
